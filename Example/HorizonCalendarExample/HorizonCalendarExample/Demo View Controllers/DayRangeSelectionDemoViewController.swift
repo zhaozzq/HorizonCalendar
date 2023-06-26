@@ -50,8 +50,8 @@ final class DayRangeSelectionDemoViewController: BaseDemoViewController {
   }
 
   override func makeContent() -> CalendarViewContent {
-    let startDate = calendar.date(from: DateComponents(year: 2020, month: 01, day: 01))!
-    let endDate = calendar.date(from: DateComponents(year: 2021, month: 12, day: 31))!
+    let startDate = calendar.date(from: DateComponents(year: 2023, month: 01, day: 01))!
+    let endDate = calendar.date(from: DateComponents(year: 2023, month: 12, day: 31))!
 
     let dateRanges: Set<ClosedRange<Date>>
     let selectedDayRange = selectedDayRange

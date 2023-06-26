@@ -19,7 +19,7 @@ import Foundation
 
 extension Calendar {
 
-  func month(containing date: Date) -> Month {
+  public func month(containing date: Date) -> Month {
     return Month(
       era: component(.era, from: date),
       year: component(.year, from: date),
@@ -53,7 +53,7 @@ extension Calendar {
     return lastDate
   }
 
-  func month(byAddingMonths numberOfMonths: Int, to month: Month) -> Month {
+  public func month(byAddingMonths numberOfMonths: Int, to month: Month) -> Month {
     guard
       let firstDateOfNextMonth = date(
         byAdding: .month,
@@ -73,7 +73,7 @@ extension Calendar {
 
 extension Calendar {
 
-  func day(containing date: Date) -> Day {
+  public func day(containing date: Date) -> Day {
     let month = Month(
       era: component(.era, from: date),
       year: component(.year, from: date),
@@ -90,7 +90,7 @@ extension Calendar {
     return date
   }
 
-  func day(byAddingDays numberOfDays: Int, to day: Day) -> Day {
+  public func day(byAddingDays numberOfDays: Int, to day: Day) -> Day {
     guard
       let firstDateOfNextDay = date(byAdding: .day, value: numberOfDays, to: startDate(of: day))
     else

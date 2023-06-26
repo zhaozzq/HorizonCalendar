@@ -148,7 +148,7 @@ extension DemoPickerViewController: UITableViewDelegate {
             scrollsToFirstMonthOnStatusBarTap: false))
         : .horizontal(
           options: HorizontalMonthsLayoutOptions(
-            maximumFullyVisibleMonths: 1.5,
+            maximumFullyVisibleMonths: 1,
             scrollingBehavior: .paginatedScrolling(
               .init(
                 restingPosition: .atLeadingEdgeOfEachMonth,

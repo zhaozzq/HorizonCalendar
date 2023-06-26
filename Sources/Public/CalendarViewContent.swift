@@ -72,7 +72,7 @@ public final class CalendarViewContent {
     }
 
     dayOfWeekItemProvider = { _, weekdayIndex in
-      let dayOfWeekText = monthHeaderDateFormatter.veryShortStandaloneWeekdaySymbols[weekdayIndex]
+      let dayOfWeekText = monthHeaderDateFormatter.shortStandaloneWeekdaySymbols[weekdayIndex]
       let itemModel = DayOfWeekView.calendarItemModel(
         invariantViewProperties: .base,
         content: .init(dayOfWeekText: dayOfWeekText, accessibilityLabel: dayOfWeekText))
